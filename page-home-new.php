@@ -10,14 +10,18 @@ global $user_ID;
 <div class="fre-background" id="background_banner" style="background-image: url('<?php echo get_theme_mod("background_banner") ? get_theme_mod("background_banner") : get_template_directory_uri()."/img/fre-bg.png";?>');">
 	<div class="fre-bg-content">
 		<div class="container">
-			<h1 id="title_banner"><?php echo get_theme_mod("title_banner") ? get_theme_mod("title_banner") : __("Find perfect freelancers for your projects or Look for freelance jobs online?", ET_DOMAIN);?></h1>
+			<!-- <h1 id="title_banner"><?php echo get_theme_mod("title_banner") ? get_theme_mod("title_banner") : __("Find perfect freelancers for your projects or Look for freelance jobs online?", ET_DOMAIN);?></h1> -->
 			<?php if(!is_user_logged_in()){ ?>
 				<?php if(!fre_check_register()){ ?>
 					<a class="fre-btn primary-bg-color" href="<?php echo get_post_type_archive_link( PROFILE ); ?>"><?php _e('Find Freelancers', ET_DOMAIN);?></a>
 					<a class="fre-btn primary-bg-color" href="<?php echo get_post_type_archive_link( PROJECT ); ?>"><?php _e('Find Projects', ET_DOMAIN);?></a>
 				<?php }else{ ?>
-					<a class="fre-btn primary-bg-color" href="<?php echo et_get_page_link('register', array("role"=>'employer')); ?>"><?php _e('Hire Freelancer', ET_DOMAIN);?></a>
-					<a class="fre-btn primary-bg-color" href="<?php echo et_get_page_link('register', array("role"=>'freelancer')); ?>"><?php _e('Apply as Freelancer', ET_DOMAIN);?></a>
+					<!-- <a class="fre-btn primary-bg-color" href="<?php echo et_get_page_link('register', array("role"=>'employer')); ?>"><?php _e('Hire Freelancer', ET_DOMAIN);?></a> -->
+					<!-- <a class="fre-btn primary-bg-color" href="<?php echo et_get_page_link('register', array("role"=>'freelancer')); ?>"><?php _e('Apply as Freelancer', ET_DOMAIN);?></a> -->
+
+					<h1 id="title_banner"><?php echo get_theme_mod("title_banner") ? get_theme_mod("title_banner") : __("BOOKING PLATFORM FOR THE FASHION INDUSTRY", ET_DOMAIN);?></h1>
+					<a class="fre-btn primary-bg-color" href="<?php echo et_get_page_link( "register" ); ?>"><?php _e("JOIN NOW", ET_DOMAIN) ?></a>
+
 				<?php } ?>
 
 			<?php }else{ ?>
@@ -38,7 +42,7 @@ global $user_ID;
 	<div class="container">
 		<h2 id="title_work"><?php echo get_theme_mod("title_work") ? get_theme_mod("title_work") : __('How FreelanceEngine works?', ET_DOMAIN);?></h2>
 		<div class="row">
-			<div class="col-lg-3 col-sm-6">
+			<div class="col-lg-4 col-sm-4">
 				<div class="fre-work-block">
 					<span>
 						<img src="<?php echo get_theme_mod('img_work_1') ? get_theme_mod('img_work_1') : get_template_directory_uri().'/img/1.png';?>" id="img_work_1" alt="">
@@ -46,7 +50,7 @@ global $user_ID;
 					<p id="desc_work_1"><?php echo get_theme_mod("desc_work_1") ? get_theme_mod("desc_work_1") : __('Post projects to tell us what you need done', ET_DOMAIN);?></p>
 				</div>
 			</div>
-			<div class="col-lg-3 col-sm-6">
+			<div class="col-lg-4 col-sm-4">
 				<div class="fre-work-block">
 					<span>
 						<img src="<?php echo get_theme_mod('img_work_2') ? get_theme_mod('img_work_2') : get_template_directory_uri().'/img/2.png';?>" id="img_work_2" alt="">
@@ -54,7 +58,7 @@ global $user_ID;
 					<p id="desc_work_2"><?php echo get_theme_mod("desc_work_2") ? get_theme_mod("desc_work_2") : __('Browse profiles, reviews, then hire your most favorite and start project', ET_DOMAIN);?></p>
 				</div>
 			</div>
-			<div class="col-lg-3 col-sm-6">
+			<div class="col-lg-4 col-sm-4">
 				<div class="fre-work-block">
 					<span>
 						<img src="<?php echo get_theme_mod('img_work_3') ? get_theme_mod('img_work_3') : get_template_directory_uri().'/img/3.png';?>" id="img_work_3" alt="">
@@ -62,6 +66,7 @@ global $user_ID;
 					<p id="desc_work_3"><?php echo get_theme_mod("desc_work_3") ? get_theme_mod("desc_work_3") : __('Use FreelanceEngine platform to chat and share files', ET_DOMAIN);?></p>
 				</div>
 			</div>
+			<!--
 			<div class="col-lg-3 col-sm-6">
 				<div class="fre-work-block">
 					<span>
@@ -70,6 +75,7 @@ global $user_ID;
 					<p id="desc_work_4"><?php echo get_theme_mod("desc_work_4") ? get_theme_mod("desc_work_4") : __('With our protection, money is only paid for work you authorize', ET_DOMAIN);?></p>
 				</div>
 			</div>
+			-->
 		</div>
 	</div>
 </div>
