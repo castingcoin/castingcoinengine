@@ -19,7 +19,7 @@ global $user_ID;
 					<!-- <a class="fre-btn primary-bg-color" href="<?php echo et_get_page_link('register', array("role"=>'employer')); ?>"><?php _e('Hire Freelancer', ET_DOMAIN);?></a> -->
 					<!-- <a class="fre-btn primary-bg-color" href="<?php echo et_get_page_link('register', array("role"=>'freelancer')); ?>"><?php _e('Apply as Freelancer', ET_DOMAIN);?></a> -->
 
-					<h1 id="title_banner"><?php echo get_theme_mod("title_banner") ? get_theme_mod("title_banner") : __("BOOKING PLATFORM FOR THE FASHION INDUSTRY", ET_DOMAIN);?></h1>
+					<h1 id="title_banner"><?php echo get_theme_mod("title_banner") ? get_theme_mod("title_banner") : __("", ET_DOMAIN);?></h1>
 					<a class="fre-btn primary-bg-color" href="<?php echo et_get_page_link( "register" ); ?>"><?php _e("JOIN NOW", ET_DOMAIN) ?></a>
 
 				<?php } ?>
