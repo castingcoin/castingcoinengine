@@ -161,9 +161,9 @@ global $current_user;
                             <a><?php _e( 'FREELANCERS', ET_DOMAIN ); ?><i class="fa fa-caret-down"
                                                                           aria-hidden="true"></i></a>
                             <ul class="dropdown-menu">
-                                <li>
+                                <!--<li>
                                     <a href="<?php echo get_post_type_archive_link( PROJECT ); ?>"><?php _e( 'Find Projects', ET_DOMAIN ); ?></a>
-                                </li>
+                                </li> -->
 								<?php if ( fre_check_register() ) { ?>
                                     <li>
                                         <a href="<?php echo et_get_page_link( 'register' ) . '?role=freelancer'; ?>"><?php _e( 'Create Profile', ET_DOMAIN ); ?></a>
@@ -174,9 +174,9 @@ global $current_user;
                         <li class="fre-menu-employer dropdown">
                             <a><?php _e( 'EMPLOYERS', ET_DOMAIN ); ?><i class="fa fa-caret-down" aria-hidden="true"></i></a>
                             <ul class="dropdown-menu">
-                                <li>
+                                <!--<li>
                                     <a href="<?php echo et_get_page_link( 'login' ) . '?ae_redirect_url=' . urlencode( et_get_page_link( 'submit-project' ) ); ?>"><?php _e( 'Post a Project', ET_DOMAIN ); ?></a>
-                                </li>
+                                </li> -->
                                 <li>
                                     <a href="<?php echo get_post_type_archive_link( PROFILE ); ?>"><?php _e( 'Find Freelancers', ET_DOMAIN ); ?></a>
                                 </li>
